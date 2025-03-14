@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EveryWeather</title>
+
+    <link rel="shortcut icon" href="./images/icons/03d.png" type="image/png" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/route.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">
+        <img src="./images/icons/03d.png" width="364" height="58" alt="logo" />
+      </a>
+      <h2>EveryWeather</h2>
+      <div class="search-box" data-search-box>
+        <div class="search-wrapper">
+          <input
+            type="search"
+            name="Search"
+            placeholder="Search City"
+            autocomplete="off"
+            class="search-field"
+            data-saerch-field
+          />
+
+          <span class="m-icon">search</span>
+          <button
+            class="icon-btn leading icon has-state"
+            aria-label="close search"
+            data-search-toggler
+          >
+            <span class="m-icon">arrow-back</span>
+          </button>
+        </div>
+
+        <div class="search-result"></div>
+      </div>
+    </header>
+  </body>
+</html>
