@@ -97,7 +97,7 @@ body {
   --on-background: #eae6f2;
   --surface: #3f92e4;
   --on-surface: #dddae5;
-  --on-surface-variant: #7b7980;
+  --on-surface-variant: #404041;
   --on-surface-variant-2: #b9b6bf;
   --outline: #3e3d40;
   --bg-aqi-1: #89e589;
@@ -267,11 +267,17 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 8px;
 }
 
 .logo img {
   width: 95px;
+}
+
+.logo h2 {
+  padding-top: 32px;
+  font-size: 3.8rem;
+  font-weight: bold;
 }
 
 .header .container,
@@ -375,6 +381,30 @@ body {
 
 .search-wrapper .icon-btn {
   background-color: transparent;
+  box-shadow: none;
+}
+
+.search-box .list-view {
+  padding-block: 8px 16px;
+}
+
+.search-box .view-item {
+  position: relative;
+  height: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding-inline: 16px 24px;
+}
+
+.search-box .view-item :is(.m-icon, .item-subtitle) {
+  color: var(--on-surface-variant);
+}
+
+.search-box .view-item .item-link {
+  position: absolute;
+  inset: 0;
   box-shadow: none;
 }
 
