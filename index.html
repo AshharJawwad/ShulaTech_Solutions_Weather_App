@@ -22,18 +22,21 @@
     <script src="./js/route.js" type="module"></script>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container">
-        <a href="/" class="logo">
+        <a href="#" class="logo">
           <img
             src="./images/icons/03d.png"
             width="364"
             height="58"
             alt="logo"
           />
+          <h2>EveryWeather</h2>
         </a>
-        <h2>EveryWeather</h2>
-        <div class="search-box" data-search-box>
+
+        <!-- Search Box -->
+        <div class="search-box active" data-search-box>
           <div class="search-wrapper">
             <input
               type="search"
@@ -46,15 +49,53 @@
 
             <span class="m-icon">search</span>
             <button
-              class="icon-btn leading icon has-state"
+              class="icon-btn leading-icon has-state"
               aria-label="close search"
               data-search-toggler
             >
-              <span class="m-icon">arrow-back</span>
+              <span class="m-icon">arrow_back</span>
             </button>
           </div>
 
-          <div class="search-result"></div>
+          <!-- Search Results -->
+          <div class="search-result" data-search-result>
+            <ul class="view-list" data-search-list>
+              <li class="view-item">
+                <span class="m-icon">location_on</span>
+
+                <div>
+                  <p class="item-title">Greater Noida</p>
+
+                  <p class="lable-2 item-subtitle">
+                    Bisrakh Jalalpur, Greater Noida, IN
+                  </p>
+                </div>
+
+                <a href="#" class="item-link has-state" data-search-toggler></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Current Loation -->
+        <div class="header-actions">
+          <button
+            class="icon-btn has-state"
+            aria-label="open search"
+            data-search-toggler
+          >
+            <span class="m-icon icon">search</span>
+          </button>
+          <!-- My Location -->
+          <a
+            href="/current-location"
+            class="btn-primary has-state"
+            data-current-location-btn
+          >
+            <span class="m-icon">my_location</span>
+
+            <span class="span">Current Location</span>
+          </a>
         </div>
       </div>
     </header>
